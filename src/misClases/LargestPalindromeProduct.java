@@ -14,25 +14,18 @@ public class LargestPalindromeProduct {
     }
 
     public int CalularMayorPalindromo() {
-        int num;
-        int palindromo = 0;
+        int num = 0;
+        int max = (int) Math.pow(10, this.cntCifras) - 1;                       //maximum value
 
-        StringBuilder strb = new StringBuilder();
-
-        for (int i = 1; i < Math.pow(10, this.cntCifras); i++) {
-            for (int j = 1; j <= i; j++) {
-                num = i * j;
-                strb.delete(0, strb.length());
-                strb.append(num + "");
-                if ((strb.reverse().toString()).equals(num + "")) {
-                    palindromo = Math.max(num, palindromo);
-
+        for (int i = max; i > 0; i--) {
+            for (int j = i; j > 0 && i * j > num; j--) {
+                if (((i * j) + "").equals(new StringBuffer((i * j) + "").reverse().toString())) {
+                    num = i * j;
                 }
-
             }
         }
-        return palindromo;
 
+        return num;
     }
 
     public int CalularMayorPalindromo(int cntCifras) {
@@ -40,4 +33,21 @@ public class LargestPalindromeProduct {
         return this.CalularMayorPalindromo();
     }
 
+    public int codexd() {
+        int num = 0;
+        for (int i = 9999; i >= 0; i--) {
+            for (int j = 9999; j >= 0 && i * j > num; j--) {
+                //System.out.println(i + "*" + j + "=" + i*j);
+
+                if (String.valueOf(i * j).equals(new StringBuffer(String.valueOf(i * j)).reverse().toString())) {
+                    num = i * j;
+                    //System.out.println(i + "*" + j + "=" + num);
+
+                }
+
+            }
+
+        }
+        return num;
+    }
 }
