@@ -33,21 +33,4 @@ public class LargestPalindromeProduct {
         return this.CalularMayorPalindromo();
     }
 
-    public int codexd() {
-        int num = 0;
-        for (int i = 9999; i >= 0; i--) {
-            for (int j = 9999; j >= 0 && i * j > num; j--) {
-                //System.out.println(i + "*" + j + "=" + i*j);
-
-                if (String.valueOf(i * j).equals(new StringBuffer(String.valueOf(i * j)).reverse().toString())) {
-                    num = i * j;
-                    //System.out.println(i + "*" + j + "=" + num);
-
-                }
-
-            }
-
-        }
-        return num;
-    }
 }
