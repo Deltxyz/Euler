@@ -5,7 +5,7 @@ public class SpecialPythagoreanTriplet {
     private int suma_abc;
     private int a;
     private int b;
-    private float c;
+    //private float c;
 
     public SpecialPythagoreanTriplet() {
 
@@ -19,7 +19,7 @@ public class SpecialPythagoreanTriplet {
 
         for (int i = suma_abc; i > 0; i--) {
             for (int j = 1; j < i; j++) {
-                c = (float) Math.sqrt(Math.pow(i, 2) + Math.pow(j, 2));
+                float c = (float) Math.sqrt(Math.pow(i, 2) + Math.pow(j, 2));
                 //System.out.println(a + "^2 + " + b + "^2 = " + c);
 
                 if (i + j + c == this.suma_abc) {
