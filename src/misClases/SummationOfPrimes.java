@@ -13,17 +13,20 @@ public class SummationOfPrimes {
 
     }
 
-    public long SumaPrimos() {
+
+    
+        public long SumaPrimos() {
 
         if (this.max == 1) {
             return 2;
         }
 
-        long sumaPrimoss = 2;
+        long sumaPrimos = 2;
 
         for (int i = 3; i < this.max; i += 2) {
 
-            int aux = (i - 1) / 2;
+            int aux = (int) Math.sqrt(i);
+            
             for (int j = 1; j <= aux; j += 2) {
 
                 if (i % j == 0 && j != 1) {
@@ -31,12 +34,12 @@ public class SummationOfPrimes {
                 }
 
                 if (aux == j || aux - 1 == j) {
-                    sumaPrimoss += i;
+                    sumaPrimos += i;
 
                 }
             }
         }
-        return sumaPrimoss;
+        return sumaPrimos;
     }
-    
+
 }
