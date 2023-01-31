@@ -31,13 +31,11 @@ public class EvenFibonacciNumbers {
             }
 
         }
-
         return sumaPares;
     }
 
     public int SumarPares(int max) {
         this.max = max;
         return this.SumarPares();
-
     }
 }

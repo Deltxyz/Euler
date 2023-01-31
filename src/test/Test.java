@@ -9,6 +9,7 @@ import misClases.MultiplesOf3Or5;
 import misClases.Problem10;
 import misClases.Problem12;
 import misClases.Problem13;
+import misClases.Problem14;
 import misClases.Problem172;
 import misClases.SmallestMultiple;
 import misClases.SpecialPythagoreanTriplet;
@@ -68,9 +69,9 @@ public class Test {
         //Problem10 problem10 = new Problem10();
         //System.out.println(problem10.MayorMultiplicacion());
 //
-        //System.out.println(Problem12.CantidadFactores(500));
+        // System.out.println(Problem12.CantidadFactores(500));
 //
-        String val = "37107287533902102798797998220837590246510135740250\n"
+        /*String val = "37107287533902102798797998220837590246510135740250\n"
                 + "46376937677490009712648124896970078050417018260538\n"
                 + "74324986199524741059474233309513058123726617309629\n"
                 + "91942213363574161572522430563301811072406154908250\n"
@@ -174,6 +175,12 @@ public class Test {
         Problem13 problem13 = new Problem13();
         problem13.setCadena(val);
         System.out.println(problem13.Primeros10Digitos());
+         */
+        Problem14 problem14 = new Problem14();
+        System.out.println(problem14.mayorCadena(1000000));
+
+//        System.out.println(problem14.obtenerNum(8));
+//        problem14.obtenerNum2(40);
     }
 
 }
