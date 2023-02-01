@@ -1,20 +1,20 @@
 package test;
 
-import misClases.EvenFibonacciNumbers;
-import misClases.LargestPalindromeProduct;
-import misClases.LargestPrimeFactor;
-import misClases.LargestProductSeries;
-import misClases.ListPrime;
-import misClases.MultiplesOf3Or5;
-import misClases.Problem10;
-import misClases.Problem12;
-import misClases.Problem13;
-import misClases.Problem14;
-import misClases.Problem172;
-import misClases.SmallestMultiple;
-import misClases.SpecialPythagoreanTriplet;
-import misClases.SumSquareDifference;
-import misClases.SummationOfPrimes;
+import Page1.Problem02;
+import Page1.Problem04;
+import Page1.Problem03;
+import Page1.Problem08;
+import Page1.Problem07;
+import Page1.Problem01;
+import Page1.Problem11;
+import Page1.Problem12;
+import Page1.Problem13;
+import Page1.Problem14;
+import Page4.Problem172;
+import Page1.Problem05;
+import Page1.Problem09;
+import Page1.Problem06;
+import Page1.Problem10;
 
 public class Test {
 
@@ -66,8 +66,8 @@ public class Test {
 //        System.out.println("La suma de los numeros primos menores que 10 es: " + summationOfPrimes.SumaPrimos());
         //System.out.println("Existen " + Problem172.Contar1() + "numeros que cumplen con la condicion");
 //
-        //Problem10 problem10 = new Problem10();
-        //System.out.println(problem10.MayorMultiplicacion());
+        Problem11 problem11 = new Problem11();
+        System.out.println(problem11.MayorMultiplicacion());
 //
         // System.out.println(Problem12.CantidadFactores(500));
 //
@@ -176,11 +176,10 @@ public class Test {
         problem13.setCadena(val);
         System.out.println(problem13.Primeros10Digitos());
          */
-        Problem14 problem14 = new Problem14();
-        System.out.println(problem14.mayorCadena(1000000));
+//        Problem14 problem14 = new Problem14();
+//        System.out.println(problem14.mayorCadena(1000000));
 
-//        System.out.println(problem14.obtenerNum(8));
-//        problem14.obtenerNum2(40);
+//        System.out.println("" + Problem172.Contar1());
     }
 
 }

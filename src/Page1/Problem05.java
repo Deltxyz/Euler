@@ -1,17 +1,21 @@
-package misClases;
+package Page1;
 
-import java.lang.invoke.VolatileCallSite;
+public class Problem05 {
+    
+//2520 is the smallest number that can be divided by each of the
+//numbers from 1 to 10 without any remainder.
 
-public class SmallestMultiple {
+//What is the smallest positive number that is evenly divisible 
+//by all of the numbers from 1 to 20?
+    //Answer:  232792560
 
     private int num;
 
-    public SmallestMultiple() {
+    public Problem05() {
 
     }
 
-    public SmallestMultiple(int num) {
-
+    public Problem05(int num) {
         this.num = num;
     }
 

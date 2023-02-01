@@ -1,14 +1,21 @@
-package misClases;
+package Page1;
 
-public class LargestPalindromeProduct {
+public class Problem04 {
+    
+    
+
+//A palindromic number reads the same both ways. The largest palindrome
+//made from the product of two 2-digit numbers is 9009 = 91 × 99.
+//Find the largest palindrome made from the product of two 3-digit numbers.
+    //Answer:  906609
 
     private int cntCifras;
 
-    public LargestPalindromeProduct() {
+    public Problem04() {
 
     }
 
-    public LargestPalindromeProduct(int cntCifras) {
+    public Problem04(int cntCifras) {
         this.cntCifras = cntCifras;
 
     }

@@ -1,17 +1,25 @@
-package misClases;
+package Page1;
 
-public class SpecialPythagoreanTriplet {
+public class Problem09 {
+    
+//A Pythagorean triplet is a set of three natural numbers, a < b < c, for which,
+//a2 + b2 = c2
+
+//For example, 32 + 42 = 9 + 16 = 25 = 52.
+
+//There exists exactly one Pythagorean triplet for which a + b + c = 1000.
+//Find the product abc.
+    //Answer:  31875000
 
     private int suma_abc;
     private int a;
     private int b;
-    //private float c;
 
-    public SpecialPythagoreanTriplet() {
+    public Problem09() {
 
     }
 
-    public SpecialPythagoreanTriplet(int suma_abc) {
+    public Problem09(int suma_abc) {
         this.suma_abc = suma_abc;
     }
 

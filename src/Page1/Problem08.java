@@ -1,14 +1,18 @@
-package misClases;
+package Page1;
 
-public class LargestProductSeries {
+public class Problem08 {
+    
+//Find the thirteen adjacent digits in the 1000-digit number that have
+//the greatest product. What is the value of this product?
+    //Answer:  23514624000
 
     private String number;
 
-    public LargestProductSeries() {
+    public Problem08() {
 
     }
 
-    public LargestProductSeries(String number) {
+    public Problem08(String number) {
         this.number = number;
         this.Correccion();
 
