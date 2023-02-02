@@ -36,7 +36,7 @@ public class Problem14 {
     }
 
     /**
-     @param max > el numero mas alto a evaluar
+     @param max el numero mas alto a evaluar
      */
     public int mayorCadena(int max) {
         int maxVal = 0;
