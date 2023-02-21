@@ -15,6 +15,8 @@ import Page1.Problem05;
 import Page1.Problem09;
 import Page1.Problem06;
 import Page1.Problem10;
+import Page1.Problem15;
+import Page1.Problem16;
 
 public class Test {
 
@@ -66,8 +68,8 @@ public class Test {
 //        System.out.println("La suma de los numeros primos menores que 10 es: " + summationOfPrimes.SumaPrimos());
         //System.out.println("Existen " + Problem172.Contar1() + "numeros que cumplen con la condicion");
 //
-        Problem11 problem11 = new Problem11();
-        System.out.println(problem11.MayorMultiplicacion());
+//        Problem11 problem11 = new Problem11();
+//        System.out.println(problem11.MayorMultiplicacion());
 //
         // System.out.println(Problem12.CantidadFactores(500));
 //
@@ -176,10 +178,14 @@ public class Test {
         problem13.setCadena(val);
         System.out.println(problem13.Primeros10Digitos());
          */
+//        long inicio = System.nanoTime();
 //        Problem14 problem14 = new Problem14();
 //        System.out.println(problem14.mayorCadena(1000000));
-
-//        System.out.println("" + Problem172.Contar1());
+//        long fin = System.nanoTime();
+//        System.out.println((fin-inicio)/Math.pow(10, 9));
+//
+//
+        Problem16.mostrar();
     }
 
 }
