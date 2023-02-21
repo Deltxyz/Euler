@@ -5,19 +5,19 @@
 package Page1;
 
 //2¹⁵ = 32768 and the sum of its digits is 3 + 2 + 7 + 6 + 8 = 26.
+import java.math.BigInteger;
+
 //What is the sum of the digits of the number 2¹⁰⁰⁰?
 public class Problem16 {
 
-    public static void mostrar() {
-
-        for (int i = 0; i <= 36; i++) {
-//            System.out.print("[ "+i + " -> " + (int)Math.pow(2, i) + " ]");
-            System.out.print("[ " + (long) Math.pow(2, i) + " ]");
-            if (i % 4 == 0) {
-                System.out.println("");
-
-            }
+    public static void CalcularSumaDigitos(int n) {
+        BigInteger num = new BigInteger("2").pow(n);
+        String numStr = num.toString();
+        int sum = 0;
+        for (int i = 0; i < numStr.length(); i++) {
+            sum += Character.getNumericValue(numStr.charAt(i));
         }
+        System.out.println(sum);
     }
 
 }

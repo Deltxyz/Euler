@@ -178,14 +178,17 @@ public class Test {
         problem13.setCadena(val);
         System.out.println(problem13.Primeros10Digitos());
          */
-//        long inicio = System.nanoTime();
 //        Problem14 problem14 = new Problem14();
 //        System.out.println(problem14.mayorCadena(1000000));
+//
+//
+//        long inicio = System.nanoTime();
+
+        Problem16.CalcularSumaDigitos(1000);
 //        long fin = System.nanoTime();
-//        System.out.println((fin-inicio)/Math.pow(10, 9));
-//
-//
-        Problem16.mostrar();
+//        System.out.println((fin - inicio) / Math.pow(10, 9));
+
+
     }
 
 }
